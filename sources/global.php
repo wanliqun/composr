@@ -639,7 +639,8 @@ safe_ini_set('docref_root', 'http://php.net/manual/en/');
 safe_ini_set('docref_ext', '.php');
 
 // Get ready for some global variables
-global $REQUIRED_CODE, $CURRENT_SHARE_USER, $PURE_POST, $NO_QUERY_LIMIT, $NO_QUERY_LIMIT, $IN_MINIKERNEL_VERSION;
+global $EXTERNAL_CALL, $REQUIRED_CODE, $CURRENT_SHARE_USER, $PURE_POST, $NO_QUERY_LIMIT, $NO_QUERY_LIMIT, $IN_MINIKERNEL_VERSION;
+$EXTERNAL_CALL = true;
 /** Details of what code files have been loaded up.
  *
  * @global array $REQUIRED_CODE
